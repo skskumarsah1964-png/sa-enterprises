@@ -165,7 +165,7 @@ h3 {
 }
 
 .tagline {
-    color: #27ae60;
+    color: #f1751b;
     font-size: 1.3rem;
     margin-bottom: 30px;
 }
@@ -184,6 +184,10 @@ h3 {
     flex-wrap: wrap;
 }
 
+.vision-mission h3{
+    color: #f1751b;
+}
+
 .card {
     background: #fff;
     padding: 30px;
@@ -196,6 +200,10 @@ h3 {
 .services {
     background: #fff;
 }
+.services h3{
+    color: #f1751b;
+}
+
 
 .service-grid {
     display: grid;
@@ -222,7 +230,7 @@ h3 {
     justify-content: center;
     margin: 0 auto 20px;
     font-size: 2rem;
-    color: #27ae60;
+    color: #2b64a9;
 }
 
 /* Surya Ghar */
@@ -247,15 +255,18 @@ h3 {
 }
 
 .info-card.highlight {
-    border-left: 5px solid #f1c40f;
+    border-left: 5px solid #2b64a9;
 }
 
 .emoji {
     display: block;
     font-size: 1.2rem;
-    color: #27ae60;
+    color: #f1751b;
     margin-bottom: 10px;
     font-weight: bold;
+}
+#emoji-sub{
+    color: #2c3e50;
 }
 
 /* Products */
@@ -266,7 +277,7 @@ h3 {
 }
 
 .products .subtitle {
-    color: #27ae60;
+    color: #555;
     margin-bottom: 60px;
 }
 
@@ -308,7 +319,7 @@ h3 {
 
 .product-text h3 {
     font-size: 2rem;
-    color: #27ae60;
+    color: #f1751b;
     margin-bottom: 20px;
 }
 
@@ -346,6 +357,12 @@ h3 {
     margin: 50px auto 0;
     gap: 50px;
     flex-wrap: wrap;
+}
+.location h3{
+    color: #f1751b;
+}
+.form h3{
+    color: #f1751b;
 }
 
 .location, .form {
@@ -385,7 +402,8 @@ form input, form textarea {
 
 /* Footer */
 .footer {
-    background: #1a3c34;
+    /* background: #1a3c34; */
+    background-color: #55446e;
     color: #fff;
     padding: 60px 20px 20px;
 }
@@ -400,7 +418,7 @@ form input, form textarea {
 }
 
 .col h4 {
-    color: #27ae60;
+    color: #f1751b;;
     margin-bottom: 20px;
 }
 
@@ -422,7 +440,7 @@ form input, form textarea {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #2c5c50;
-    color: #27ae60;
+    color: #ddd;
 }
 
 /* Scroll to Top */
@@ -430,7 +448,7 @@ form input, form textarea {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #27ae60;
+    background: #f1751b;
     color: #fff;
     width: 50px;
     height: 50px;
@@ -444,7 +462,7 @@ form input, form textarea {
 }
 
 #scrollTop:hover {
-    background: #219653;
+    background: #f1751b;
 }
 
 /* Responsive */
