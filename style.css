@@ -447,7 +447,7 @@ form input, form textarea {
 #scrollTop {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     background: #f1751b;
     color: #fff;
     width: 50px;
@@ -464,6 +464,27 @@ form input, form textarea {
 #scrollTop:hover {
     background: #f1751b;
 }
+
+/* WhatsApp Floating Button */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    margin-top: 15px;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

@@ -29,3 +29,16 @@ window.onscroll = function() {
 scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stop form from reloading page
+
+    let userName = document.getElementById("name").value;
+
+    // show thank you message
+    document.getElementById("thankMsg").textContent = "Thank you, " + userName + "! Your message has been sent.";
+    document.getElementById("thankMsg").style.display = "block";
+
+    // optional: clear form
+    this.reset();
+});
