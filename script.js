@@ -30,15 +30,43 @@ scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// document.getElementById("contactForm").addEventListener("submit", function(event) {
+//     event.preventDefault(); // stop form from reloading page
+
+//     let userName = document.getElementById("name").value;
+
+//     // show thank you message
+//     document.getElementById("thankMsg").textContent = "Thank you, " + userName + "! Your message has been sent.";
+//     document.getElementById("thankMsg").style.display = "block";
+
+//     // optional: clear form
+//     this.reset();
+// });
+
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // stop form from reloading page
+    event.preventDefault();
 
     let userName = document.getElementById("name").value;
+    let userPhone = document.querySelector("input[type='tel']").value;
+    let userMessage = document.querySelector("textarea").value;
 
-    // show thank you message
-    document.getElementById("thankMsg").textContent = "Thank you, " + userName + "! Your message has been sent.";
+    // Send to Google Sheet
+    fetch("https://script.google.com/macros/s/AKfycbxaPeNrh5vlgg8Dg5pbn8bhDuJtr5uXWVw_kZS28uHk-UZMrk573HVe5T1zHsuuoLNT/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            name: userName,
+            phone: userPhone,
+            message: userMessage
+        })
+    });
+
+    // Show Thank You message
+    document.getElementById("thankMsg").textContent =
+        "Thank you, " + userName + "! Your message has been sent.";
     document.getElementById("thankMsg").style.display = "block";
 
-    // optional: clear form
+    // Clear form
     this.reset();
 });
