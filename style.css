@@ -485,6 +485,25 @@ form input, form textarea {
     margin-top: 15px;
 }
 
+/* Instagram Floating Button */
+.insta_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;  /* adjust position (above WhatsApp button) */
+    right: 20px;
+    background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949, #d6249f, #285AEB);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.insta-icon {
+    margin-top: 15px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
